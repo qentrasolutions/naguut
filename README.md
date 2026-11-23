@@ -79,7 +79,8 @@ Für mehr parallele Spiele einen vServer einplanen.
 
 ### Aktualisieren
 
-Neue Version über die bestehende Installation kopieren. **Nicht überschreiben:** `app/config.php`
+Der Quellcode liegt unter https://github.com/qentrasolutions/naguut (Branch `main`). Neue Version
+herunterladen (*Code → Download ZIP*) oder per `git pull` holen und über die bestehende Installation kopieren. **Nicht überschreiben:** `app/config.php`
 und den Ordner `uploads/`. Die Datenbank wird beim ersten Seitenaufruf automatisch ergänzt
 (Musik, übersprungene Fragen, Einstellungen, Avatare, Super-Admin).
 Beim Update von einer älteren Version wird das älteste Admin-Konto automatisch zum Super-Admin.
@@ -200,12 +201,11 @@ Gemessen wird ausschließlich auf dem Server. Vor jeder Frage gibt es 3 Sekunden
 
 Alle **Muss**-Anforderungen sind umgesetzt, dazu diese **Soll**-Punkte: F-05 Admin-Verwaltung,
 F-15 Punktefaktor, F-17 Duplizieren und öffentliche Quizze, F-35 Wiederverbinden, F-53 automatische
-Löschung, aus F-27 Frage überspringen, Frage vorzeitig beenden und Spiel beenden, aus F-28 Musik.
+Löschung, F-18 Import/Export, aus F-27 Frage überspringen, Frage vorzeitig beenden und Spiel beenden, aus F-28 Musik.
 
 Noch nicht enthalten (für spätere Versionen vorgesehen):
 
 - F-27 *Pausieren* einer laufenden Frage (Überspringen und Beenden gehen)
-- F-18 Import/Export als Datei (die JSON-API unter `/api/quizzes/{id}` liefert das Format bereits)
 - F-28 Soundeffekte (Musik ist enthalten), F-29 Team-Modus, F-42 Streak-Bonus
 
 Abweichung im Datenmodell: Beim Spielstart wird das Quiz als Kopie (`games.quiz_snapshot`) im
