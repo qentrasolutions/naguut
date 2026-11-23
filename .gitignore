@@ -1,0 +1,8 @@
+# Zugangsdaten und Laufzeitdaten nicht ins Repository
+/app/config.php
+/app/storage/
+/uploads/*
+!/uploads/.htaccess
+*.sqlite
+*.log
+.DS_Store
